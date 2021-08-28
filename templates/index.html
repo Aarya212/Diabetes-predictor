@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diabetes Predictor</title>
+    </head>
+
+    <body>
+        <!-- Website Title -->
+    	<div class="container">
+            <h1 class='container-heading'><span class="heading_font">Diabetes Predictor</span></h1>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0"><br>
+                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
+                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br>
+                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br>
+                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80"><br>
+                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
+                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br>
+                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="www.linkedin.com/in/aarya-raj-singh-ranawat-76078a1a9"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Web App by Aarya</p>
+       </div>
+
+       <style>
+        body {
+            background-image: url('dia2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            text-align: center;
+            padding: 0px;
+        }
+        </style>
+
+    </body>
+</html>

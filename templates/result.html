@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diabetes Predictor</title>
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Diabetes Predictor</span></h2>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>Oops! You have DIABETES.</span></h1>
+				<img src="yes.jpeg" alt="Diabetes Image">
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h1>
+				<img src="no.jpg" alt="Not Diabetes Image">
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="www.linkedin.com/in/aarya-raj-singh-ranawat-76078a1a9"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ by Aarya.</p>
+       </div>
+
+	</body>
+</html>
