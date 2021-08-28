@@ -12,5 +12,5 @@ This dataset is originally from the National Institute of Diabetes and Digestive
 
 ## **Web App**
 
-![](screenshot.png)
+![](Screenshot.png)
 
